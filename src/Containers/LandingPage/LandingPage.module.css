@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-y: hidden;
+}
+
+#back{
+  height: 100vh;
+  background-image: url('./img/polygon-scatter-haikei.svg');
+}
+
+.content{
+  position: absolute;
+}
+.content img {
+  position: relative;
+  top: -27rem;
+  height: 40rem;
+  width: 50rem;
+  padding: 3vw 5vw;
+  float: right;
+  color: #272343;
+}
+
+.left {
+  position: relative;
+  top: 10rem;
+  left: 15%;
+  width: 25%;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  color: rgb(240, 240, 240);
+  background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 30px;
+}
+
+.left h1{
+  margin-bottom: 20px;
+  color: white;
+}
+.left h1 > span{
+  color: #50367e;
+}
+
+@media screen and (max-width: 1480px) {
+  .content img {
+    height: 30rem;
+    width: 40rem;
+    padding: 6vw 8vw;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .left{
+    font-size: 1rem;
+  }
+  .left {
+    top:3rem;
+    left: 50%;
+    transform: translate(-58%);
+    width: 50%;
+  }
+  .content img {
+    top: -3rem;
+    height: 300px;
+    width: 400px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

@@ -1,0 +1,105 @@
+#back{
+  background-image: url('./img/polygon-scatter-haikei.svg');
+  height: 100vh;
+}
+
+.loginDiv {
+  width: 350px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  margin-left: 38%;
+  margin-top: 90px;
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 30px;
+}
+
+.container {
+  background-color: #272343;
+  top: -10%;
+  padding: 29px;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: white;
+}
+.subTitle {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+
+.fields {
+  width: 100%;
+  padding: 70px 5px 5px 5px;
+}
+.fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  color: #555;
+  padding: 15px 15px 15px 15px;
+}
+.input {
+  margin-bottom: 25px;
+  border-radius: 7px;
+  background: rgb(255, 255, 255);
+}
+
+.text {
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+.fields svg {
+  height: 22px;
+  margin: 0 10px -3px 25px;
+}
+
+.signin {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  height: 40px;
+  color: #272343;
+  margin-left: 70px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #592894;
+  transition: 0.5s;
+  border: solid 2px white;
+}
+.signin:hover {
+  background: white;
+  border: solid 3px #592894;
+  color: #592894;
+}
+.signin:active {
+  background: #1da88a;
+}
+.link {
+  padding-top: 20px;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
+}

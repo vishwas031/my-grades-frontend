@@ -1,0 +1,38 @@
+.container{
+    height: 12rem;
+    width: 12rem;
+    background: rgba( 255, 255, 255, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+    color: #000000;
+    font-size: 1.5rem;
+    gap: 1rem;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.container svg{
+    width: 60px;
+    height: 60px;
+    color: #521996;
+}
+
+.container:hover{
+    background-color: #521996;
+    color: white;
+    transform: scale(1.05);
+}
+.container:hover svg{
+    color: white;
+    transform: scale(1.05);
+}
