@@ -31,7 +31,7 @@ body{
   left: 15%;
   width: 25%;
   padding: 2rem 3rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(240, 240, 240);
   background: rgba( 255, 255, 255, 0.5 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -41,10 +41,14 @@ body{
 }
 
 .left h1{
+  font-size: 3.5rem;
   margin-bottom: 20px;
   color: white;
 }
 .left h1 > span{
+  color: #50367e;
+}
+.left h3 span{
   color: #50367e;
 }
 

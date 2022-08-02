@@ -45,12 +45,11 @@ function ResultsPage(props) {
 
       const private_key = new NodeRSA(privateKey);
       const decryptedResult = private_key.decrypt(data.result, "utf8");
-      console.log(decryptedResult);
 
       history.push("/display", { result: decryptedResult });
     } catch (err) {
       setIsLoading(false);
-      notify("Something went wrong!", "error");
+      notify("Incorrect private key", "error");
     }
   };
 

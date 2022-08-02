@@ -2,7 +2,6 @@ import React from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 import styles from "./LandingPage.module.css";
 import Image from "../../Images/Security-cuate.svg";
-import Card from 'react-bootstrap/Card';
 
 function LandingPage(props) {
   return (
@@ -11,10 +10,10 @@ function LandingPage(props) {
       <div className={styles.content}>
         <div className={styles.left}>
           <h1>My<span>Grades</span></h1>
-          <p>
-          Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a :root level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.  
+          <h3>We ensure the <span>confidentiality</span> and <span>authenticity</span> in students grades.</h3>
           <br/>
-          Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a :root level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.  
+          <p>
+          Result can only be accessed by the respective registered student, no intruder can access and manipulate the grades. To ensure student do not mis-use the result and temper his/her grades, we use blockchain to provide high level of authenticity. 
           </p>
         </div>
         <div className={styles.right}>

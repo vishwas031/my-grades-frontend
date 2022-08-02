@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -32,12 +32,11 @@ function LoginPage(props) {
     try {
       setLoading(true);
       const data = await login(email, password);
-      console.log(data);
       notify("Successfully logged in!", "success");
       dispatch({ type: ADMIN_TOKEN, payload: { token: data.apiKey } });
       history.push("/upload");
     } catch (err) {
-      notify(err.message || "Something went wrong!", "error");
+      notify("Invalid Credentials", "error");
     } finally {
       setLoading(false);
     }

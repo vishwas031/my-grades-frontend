@@ -56,7 +56,7 @@ function RegisterPage(props) {
       notify("OTP sent to mail!", "success");
       setOtpSent(true);
     } catch (err) {
-      notify(err.message || "Something went wrong!", "error");
+      notify("User already Registered", "info");
     } finally {
       setLoading(false);
     }
@@ -70,7 +70,7 @@ function RegisterPage(props) {
       notify("Successfully registered!", "success");
       download("private_key.txt", privateKey);
     } catch (err) {
-      notify(err.message || "Something went wrong!", "error");
+      notify("Wrong OTP", "warning");
     } finally {
       setLoading(false);
     }

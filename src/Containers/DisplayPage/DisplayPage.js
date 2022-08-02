@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, useLocation } from "react-router-dom";
-import { toast } from "react-toastify";
+import { useLocation } from "react-router-dom";
 
 import NavBar from "../../Components/NavBar/NavBar";
 import styles from "../../Components/Form/Form.module.css";
@@ -33,7 +32,6 @@ function DisplayPage(props) {
     const parsedResult = JSON.parse(result);
     delete parsedResult.roll;
 
-    console.log(parsedResult);
     setResultObject(parsedResult);
   }, []);
 

@@ -28,7 +28,6 @@ function UploadPage(props) {
     try {
       setIsLoading(true);
       const data = await uploadResults(file, sem, user.token);
-      console.log(data);
       setIsLoading(false);
       notify("Results successfully uploaded!", "success");
     } catch (err) {

@@ -36,14 +36,12 @@ function VerifyPage(props) {
 
   const handleVerify = async () => {
     try {
-      console.log("calling");
       setLoading(true);
       const data = await verifyGrades(
         roll,
         sem,
         keccak256(result).toString("hex")
       );
-      console.log(data);
       if (data.verified)
         notify(
           "The Result is 100% correct and is not being tempered.",
